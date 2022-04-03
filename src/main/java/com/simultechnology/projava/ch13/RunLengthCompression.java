@@ -9,7 +9,6 @@ public class RunLengthCompression {
         char prev = 0;
         var builder = new StringBuilder();
         for (var ch : data.toCharArray()) {
-            System.out.println(ch);
             if (prev == ch) {
                 // when same char continues
                 count++;
@@ -21,7 +20,8 @@ public class RunLengthCompression {
             } else {
                 // when different char comes
                 if (count >= 0) {
-                    builder.append((char) ('0' + count));
+                    //builder.append((char) ('0' + count));
+                    builder.append(count);
                     count = COUNTER_BASE;
                 }
                 builder.append(ch);

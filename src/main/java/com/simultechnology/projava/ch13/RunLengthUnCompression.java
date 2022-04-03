@@ -1,6 +1,6 @@
 package com.simultechnology.projava.ch13;
 
-public class ReverseRunLengthCompression {
+public class RunLengthUnCompression {
     public static void main(String[] args) {
         var data = "ab0c1ba2bc9c0d1";
 
