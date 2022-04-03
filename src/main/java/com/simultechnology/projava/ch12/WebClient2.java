@@ -15,7 +15,7 @@ public class WebClient2 {
         HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
         String body = response.body();
         body.lines()
-                .limit(5)
+//                .limit(5)
                 .forEach(System.out::println);
     }
 }
