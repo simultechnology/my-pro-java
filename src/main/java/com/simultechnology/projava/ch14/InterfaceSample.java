@@ -2,6 +2,7 @@ package com.simultechnology.projava.ch14;
 
 import java.util.List;
 
+@FunctionalInterface
 interface Named {
     String name();
 
